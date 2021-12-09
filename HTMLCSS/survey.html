@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+  </head>
+  <body background="https://wallpaperaccess.com/full/780473.jpg">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+  </body>
+</html>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+<style>
+
+  html, body {
+    height: 100%; 
+    font-family: inter, sans-serif;
+  }
+
+  #intro {
+    color: black;
+    text-align: center;
+  }
+
+  #survey-form {
+    display: flex;
+    margin: auto;
+    width: 600px;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: 150%;
+    background-color: rgba(222, 222, 222, 0.8);
+    padding: 20px 35px 20px 20px;
+    height: 100%;
+    font-size: 100%;
+    border-radius: 5px;
+  }
+
+  .item {
+    padding: 7px 0px 7px 0px;
+  }
+
+  .input {
+    border-radius: 5px;
+    padding: 8px 5px 8px 5px;
+    width: 100%;
+  }
+
+  #dropdown, #submit, #dropdown-stroke {
+    width: 612px;
+  }
+
+</style>
+
+<div id="intro">
+  <h1 id="title">Tennis Survey</h1>
+  <i><p id="description">Give your opinion on your own tennis preferences!</p></i>
+</div>
+
+<form id="survey-form">
+  <div class="item">
+    <strong><label id="name-label" for="name">Name</label></strong><br>
+    <input id="name" class="input" type="text" placeholder="Enter your name" required>
+  </div>
+
+  <div class="item">
+    <strong><label id="email-label" for="email">Email</label></strong><br>
+    <input id="email" class="input" type="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="item">
+    <strong><label id="number-label" for="number">Age (Optional)</label></strong><br>
+    <input id="number" class="input" type="number" min="0" max="100" placeholder="Age">
+  </div>
+
+  <div class="item">
+    <strong><label for="gender">Gender</label></strong>
+    <div id="gender">
+      <input type="radio" id="male" name="genders" value="Male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="genders" value="Female">
+      <label for="no">Female</label><br>
+    </div>
+  </div>
+
+  <div class="item">
+    <strong><label for="tennis-enjoyment">Do you enjoy tennis?</label></strong>
+    <div id="tennis-enjoyment">
+      <input type="radio" id="yes" name="options" value="Yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="options" value="No">
+      <label for="no">No</label><br>
+      <input type="radio" id="maybe" name="options" value="Maybe">
+      <label for="maybe">Maybe</label><br>
+    </div>
+  </div>
+
+  <div class="item">
+    <strong><label id="dropdown-label" for="dropdown">Select your favourite racquet brand</label></strong><br>
+    <select id="dropdown" class="input">
+      <option value="Blank"></option>
+      <option value="Babolat">Babolat</option>
+      <option value="Head">Head</option>
+      <option value="Yonex">Yonex</option>
+      <option value="Wilson">Wilson</option>
+      <option value="Technifibre">Technifibre</option>
+      <option value="Prince">Prince</option>
+      <option value="Dunlop">Dunlop</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="item">
+    <strong><label id="dropdown-label-stroke" for="dropdown-stroke">Select your favourite tennis stroke</label></strong><br>
+    <select id="dropdown-stroke" class="input">
+      <option value="Blank"></option>
+      <option value="Forehand">Forehand</option>
+      <option value="Backhand">Backhand</option>
+      <option value="Serve">Serve</option>
+      <option value="Volley">Volley</option>
+      <option value="Overhead">Overhead</option>
+      <option value="Slice">Slice</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="item">
+    <strong><label for="tennis players">Select your favourite tennis players (Check all that apply)</label></strong>
+    <div id="tennis players">
+      <input type="checkbox" id="roger" name="players" value="Roger Federer">
+      <label for="roger">Roger Federer</label><br>
+      <input type="checkbox" id="rafa" name="players" value="Rafael Nadal"> 
+      <label for="rafa">Rafael Nadal</label><br>
+      <input type="checkbox" id="novak" name="players" value="Novak Djokovic">
+      <label for="novak">Novak Djokovic</label><br>
+      <input type="checkbox" id="andy" name="players" value="Andy Murray">
+      <label for="andy">Andy Murray</label><br>
+      <input type="checkbox" id="nick" name="players" value="Nick Kyrgios">
+      <label for="nick">Nick Kyrgios</label><br>
+    </div>
+  </div>
+
+  <div class="item">
+    <strong><label for="comments">Why do you like these tennis players?</label></strong><br>
+    <textarea id="comments" class="input" rows="8" cols="50">Enter your comments here...</textarea>
+  </div>
+
+  <button id="submit" class="input" type="submit">Submit</button>
+</form>
