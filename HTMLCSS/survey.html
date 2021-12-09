@@ -14,9 +14,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 
 <style>
-
-  html, body {
-    height: 100%; 
+  html,
+  body {
+    height: 100%;
     font-family: inter, sans-serif;
   }
 
@@ -49,15 +49,18 @@
     width: 100%;
   }
 
-  #dropdown, #submit, #dropdown-stroke {
+  #dropdown,
+  #submit,
+  #dropdown-stroke {
     width: 612px;
   }
-
 </style>
 
 <div id="intro">
   <h1 id="title">Tennis Survey</h1>
-  <i><p id="description">Give your opinion on your own tennis preferences!</p></i>
+  <i>
+    <p id="description">Give your opinion on your own tennis preferences!</p>
+  </i>
 </div>
 
 <form id="survey-form">
@@ -132,7 +135,7 @@
     <div id="tennis players">
       <input type="checkbox" id="roger" name="players" value="Roger Federer">
       <label for="roger">Roger Federer</label><br>
-      <input type="checkbox" id="rafa" name="players" value="Rafael Nadal"> 
+      <input type="checkbox" id="rafa" name="players" value="Rafael Nadal">
       <label for="rafa">Rafael Nadal</label><br>
       <input type="checkbox" id="novak" name="players" value="Novak Djokovic">
       <label for="novak">Novak Djokovic</label><br>
@@ -145,7 +148,7 @@
 
   <div class="item">
     <strong><label for="comments">Why do you like these tennis players?</label></strong><br>
-    <textarea id="comments" class="input" rows="8" cols="50">Enter your comments here...</textarea>
+    <textarea id="comments" class="input" rows="4" cols="50">Enter your comments here...</textarea>
   </div>
 
   <button id="submit" class="input" type="submit">Submit</button>
