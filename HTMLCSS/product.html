@@ -10,10 +10,13 @@
   </body>
 </html>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato:wght@300&display=swap" rel="stylesheet">
+
 <style>
   html,
   body {
     background-color: #EEEEEE;
+    font-family: lato, sans-serif;
   }
 
   #nav-bar {
@@ -42,6 +45,9 @@
 
   .nav-link {
     font-size: 150%; 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
   }
 
   #contents {
@@ -61,6 +67,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    font-size: 25px;
   }
 
   #descriptions {
@@ -69,12 +76,14 @@
   }
 
   .logo {
-    max-width: 100px;
+    width: 200px;
+    height: 200px;
   }
 
   .description {
     display: flex;
     align-items: center;
+    font-size: 25px;
   }
 
   #video {
@@ -108,35 +117,62 @@
     background-color: yellow;
   }
 
-  #copyright {
+  #bottom-bar {
     display: flex;
     width: 1200px;
     height: 30px;
     background-color: grey;
+    align-items: center;
   }
 
-  @media (max-width: 600px) {
+  #miscellaneous {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 200px;
+    left: 775px;
+  }
+
+  #copyright {
+    position: relative;
+    left: 20px;   
+  }
+
+  @media (max-width: 700px) {
     #nav-bar {
-      display: flex;
-      flex-direction: column;
       position: fixed;
-      background-color: gray;
       width: 100%;
       top: 0;
       left: 0;
       z-index: 1;
-    }   
+    }
+
+
+    #nav-bar-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 10px;
+      font-size: 12px;
+    }
+  
+    #prices {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 1000px;
+    }
   }
 
 </style>
 
 <header id="header">
   <nav id="nav-bar">
-    <img id="header-img" src="https://media.istockphoto.com/vectors/sports-game-big-tennis-logo-and-icon-two-rackets-and-a-ball-vector-id1148409319?k=20&m=1148409319&s=170667a&w=0&h=ZmNRlut4nBVeCgvHju3U4r12YKqBCF2rdVhc9sY1ofI=">
+    <img id="header-img" src="logo-removebg-preview.png">
     <div id="nav-bar-links">
-      <a href="#cheap" class="nav-link">Go to cheap</a>
-      <a href="#medium" class="nav-link">Go to medium</a>
-      <a href="#expensive" class="nav-link">Go to expensive</a>
+      <a href="#cheap" class="nav-link">Lite</a>
+      <a href="#medium" class="nav-link">Strike</a>
+      <a href="#expensive" class="nav-link">Tour</a>
     </div>
   </nav>
 
@@ -153,12 +189,12 @@
         <p>Unparalleled power</p>
       </div>
       <div class="description">
-        <img id="dampening" class="logo" src="https://i.pinimg.com/originals/ed/45/2a/ed452a752d493412663591d7e5ed965b.png">
+        <img id="dampening" class="logo" src="dampening-removebg-preview.png">
         <p>New dampening technology</p>
       </div>
       <div class="description">
         <img id="stability" class="logo" src="balance-removebg-preview.png">
-        <p>Unfathommnable stability</p>
+        <p>Unfathomnable stability</p>
       </div>
     </div>
 
@@ -168,37 +204,41 @@
       <div id="cheap" class="price">
         <h1 class="id-header">Babolat Pure Strike Lite</h1>
         <h2>$320</h2>
-        <ul>
-          <li>The lightest of the three racquets</li>
-          <li>Perfect for beginners</li>
-          <li>String weight of 300g</li>
-        </ul>
+          The lightest of the three racquets <br>
+          Perfect for beginners <br>
+          String weight of 300g <br>
+          <br>
         <button type="button" class="price-button">SELECT</button>
       </div>
       <div id="medium" class="price">
         <h1 class="id-header">Babolat Pure Strike</h1>
         <h2>$350</h2>
-        <ul>
-          <li>The middle ground</li>
-          <li>Perfect for intermediate players</li>
-          <li>String weight of 320g</li>
-        </ul>
+          The middle ground <br>
+          Perfect for intermediate players <br>
+          String weight of 320g <br>
+          <br>
         <button type="button" class="price-button">SELECT</button>
       </div>
       <div id="expensive" class="price">
         <h1 class="id-header">Babolat Pure Strike Tour</h1>
         <h2>$380</h2>
-        <ul>
-          <li>Heaviest of the three racquets</li>
-          <li>Perfect for advanced players</li>
-          <li>String weight of 340g</li>
-        </ul>
+          Heaviest of the three racquets <br>
+          Perfect for advanced players  <br>
+          String weight of 340g  <br>
+          <br>
         <button type="button" class="price-button">SELECT</button>
       </div>
     </div>
 
-    <div id="copyright">
-
+    <div id="bottom-bar">
+      <div id="copyright">
+        Copyright 2022, Tennis Legacy
+      </div>
+      <div id="miscellaneous">
+        <a href="#form">Privacy</a>
+        <a href="#form">Terms</a>
+        <a href="#form">Contact</a>
+      </div>
     </div>
 
   </div>
