@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Page</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
+
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  header {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #navbar-header, .nav-link {
+    padding-left: 10px;
+  }
+
+  .divider {
+    border-bottom: 1px solid black;
+  }
+
+  table, td, tr {
+    border: 1px solid black;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 15%;
+    gap: 10px;
+    font-size: 20px;
+    border-right: 1px solid black;
+    height: 100%;
+  }
+
+  .nav-link {
+    margin-top: 1px solid black;
+  }
+
+  #main-doc {
+    position: absolute;
+    width: 80%;
+    right: 0;
+  }
+
+  @media (max-width: 900px) {
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 20%;
+      width: 100%;
+    }
+
+    #main-doc {
+      position: absolute;
+      height: 80%;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+</style>
+
+<nav id="navbar">
+  <header id="navbar-header">The Tennis Racquet</header>
+  <a class="nav-link" href="#Introduction">Introduction</a>
+  <span class="divider"></span>
+  <a class="nav-link" href="#Racquet_Brand">Racquet Brand</a>
+  <a class="nav-link" href="#Racquet_Weight">Racquet Weight</a>
+  <a class="nav-link" href="#Racquet_Head_Size">Racquet Head Size</a>
+  <a class="nav-link" href="#Beam">Beam</a>
+  <a class="nav-link" href="#Length">Length</a>
+  <a class="nav-link" href="#String_Material">String Material</a>
+  <a class="nav-link" href="#String_Tension">String Tension</a>
+  <a class="nav-link" href="#String_Pattern">String Pattern</a>
+  <a class="nav-link" href="#String_Gauge">String Gauge</a>
+  <a class="nav-link" href="#When_to_restring">When to restring</a>
+  <a class="nav-link" href="#Balance">Balance</a>
+  <a class="nav-link" href="#Racquet_Overgrips">Racquet Overgrips</a>
+  <a class="nav-link" href="#Racquet_Grip_Size">Racquet Grip Size</a>
+  <a class="nav-link" href="#Dampeners">Dampeners</a>
+  <a class="nav-link" href="#References">References</a>
+</nav>
+
+<main id="main-doc">
+  <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <article>
+        <p>In this guide, we extensively cover everything you need to know about the tennis racquet.</p>
+        <p>The tennis racquet has a very rich history, with its roots dating back to 1100BC. As the theory goes, the game of tennis was created by 11th Century French monks who used their hands as racquets, making it more like handball than modern tennis. After the monks started getting injured from playing with their hands, they decided to shift to paddles. Players first used solid wooden paddles, and then that transferred to what we would now call a racquet in the 14th century. This early medieval racquet had strings made of gut and was bound in a large wooden frame. </p>
+        <p>The very first tennis racquet was made in 1874 in London by Major Walter C. Wingfield. Wooden racquets started to be used in the middle of the nineteenth century when lawn tennis was invented and gained popularity. The wooden racquets used in this period were created with a wide head so that it was easier to use the ball, but the racquets were also relatively heavy. The wooden racquet stayed mostly the same for about 100 years! Excluding laminated wooden racquets, which started to gain popularity in 1947. This was a game-changer for many players. </p>
+        <p>In 1968 Wilson introduces the T2000, the first steel racquet. The racquet gained legendary status after tennis great Jimmy Connors adopted it as his own. The heads were twice the size of the wooden tennis racquet heads traditionally used in the century prior.</p>
+        <p>As technology advanced manufacturers started using aluminium and graphite. 1976 was another big step forward and Prince launched the lighter oversized racquet, giving players a larger sweet spot for added power. Prince Classic and Prince Pro very quickly became top sellers. By 1980, wooden racquets became obsolete. Instead, brands like Dunlop and Prince had all switched over to graphite frames, and the cheaper ones were made from aluminium.  By using graphite brands were able to produce racquets which were still lightweight but with bigger sweet spots and much stiffer for more powerful shots and better control.</p> 
+        <p>By the late 80’s technology had advanced further and the materials used were and still are, a mix of alloys, ceramics, fiberglass, boron, titanium and Kevlar. And with tennis being one of the most watched and most played sports in the world all the brands got involved. The tennis racquet is constantly changing thanks to the evolving modern game and is likely far from finished, with tennis players requiring more out of their game than ever.</p>
+      </article>
+      <code>Author's Note: Throughout this guide, I'll be referring to my own personal tennis racquet specs.</code>
+    </section>
+  <section id="Racquet_Brand" class="main-section">
+      <header>Racquet Brand</header>
+      <p>There are a number of tennis racquet brands to choose from, each with their own pros and cons.</p>
+      <ul> 
+        <li>Wilson: Power and precision. Crisp/stiff feel for attacking players who like to get to the net.</li>
+        <li>Head: Control and feel. Known for racquets like the HEAD Pro Tour and Prestige Classic, it’s a line connected to flexible racquets where you are very much connected to the ball. The brand offering the widest selection of racquets. </li>
+        <li>Babolat: Lots of power and spin, stiff feel, wide-bodied racquets, for modern players who hit with lots of spin.</li>
+        <li>Yonex: Modern frames with their signature Isometric head shape for a bigger sweet spot. Similar to Babolat in not offering too many models, but keeping a feel and control-based line in the VCORE Pro racquets.</li>
+        <li>Technifibre: built their own niche in the middle of Babolat (stiff/power/spin) and Wilson (attack-oriented control frames).</li>
+        <li>Prince: A brand that stands out for its history but also innovative thinking. Prince have remained true to their idea of staying different and creating something unique for the player.</li>
+      </ul>
+      <code>Author's Note: I personally endorse the Babolat Pure Strike 16x19 (Project One7)</code>
+  </section>
+  <section id="Racquet_Weight" class="main-section">
+      <header>Racquet Weight</header>
+      <p>Generally speaking for racquet weights:</p>
+      <ul>
+        <li>300 grams (or 10.6 ounces) is an average weight for a racquet</li>
+        <li>Less than 285 grams (10 ounces) is considered light</li>
+        <li>More than 310 grams (or 11 ounces) is considered heavy</li>
+      </ul>
+      <p>As you’d expect, a heavy racquet in general means more power but less manoeuvrability and vice versa with a light racquet. But extra weight also mean more stability, so in theory you can hit the ball harder and still control the racquet. Therefore you’ll tend to find advanced players will look for a heavier racquet and beginners will opt for something lighter.</p>
+      <p>Pros often customise their racquets by adding lead tape that increases swing weight.</p>
+      <code>Author's Note: I have a unstrung weight of 305g</code>
+  </section>
+  <section id="Racquet_Head_Size" class="main-section">
+      <header>Racquet Head Size</header>
+      <p>Measured in ‘square inches’ or ‘sq. in.’</p>
+      <p>This basically denotes the total surface area of the strings & frame or the size of the head including the frame. In it’s simplest form, the bigger the head size then the easier it is to hit the ball. </p>
+      <p>But actually hitting the ball isn’t really the hardest part of tennis, it’s more to do with what you actually do with the ball once you’ve hit it. Hence why the head size becomes more important.</p>
+      <ul>
+        <li>A large head size, anything over 100 square inches, will generate moire power in your shots because of greater trampolining effect. A larger head size means longer strings and therefore more spring in them when you contact the ball.</li>
+        <li>A head size between 96 – 100 square inches is considered average size</li>
+        <li>A head size below 96 square inches is considered small and will therefore generate less power in theory allowing oyu to control the ball better</li>
+      </ul>
+      <code>Author's Note: I have a head size of 98 sq in</code>
+  </section>
+  <section id="Beam" class="main-section">
+    <header>Beam</header>
+    <p>Measured in millimetres (mm) showing head, shoulder and handle of the frame e.g. 23mm/26mm/23mm</p>
+    <p>Modern tennis racquets aren’t all straight if you look at their frame. Often the width differs as you go along the frame. The 3 measurements for the beam will show you if the frame stays straight or goes in or out as you move along the frame.</p>
+    <p>In general a wider beam width means a more powerful racquet as their is more material in the racquet therefore giving you more strength when you contact the ball.</p>
+    <ul>
+      <li>22mm or less is considered a narrow beam</li>
+      <li>22-24mm is considered an average beam</li>
+      <li>24mm or more is considered a wide beam</li>
+    </ul>
+    <code>Author's Note: I have a beam width of 21.3mm</code>
+  </section>
+  <section id="Length" class="main-section">
+    <header>Length</header>
+    <p>Measured in inches (in) or centimetres (cm) or millimetres (mm)</p>
+    <p>The variance in the length of a tennis racquet hasn’t really changed over the years apart from a short trend towards extra long racquets. This means that nearly all racquets are 27 inches in length</p>
+    <p>A longer racquet will create higher swing velocity and therefore a more powerful shot, but will be harder to control.</p>
+    <code>Author's Note: Length of 27in/68.58cm</code>
+  </section>
+  <section id="String_Material" class="main-section">
+      <header>String Material</header>
+      <p>There are many different types of tennis strings, each with its own upsides and downsides: </p>
+      <ul>
+        <li>Synthetic gut: Provides all-around playability, value and is ideal for beginners. However, provides average performance and is not recommended for advanced players or string breakers.</li>
+        <li>Multifilament: Provides good comfort, power and feel. However is less control oriented and less durable for big hitters.</li>
+        <li>Natural gut: Provides maximum comfort, power, feel and tension maintenance. However, it is incredibly expensive.</li>
+        <li>Polyster: Provides maximum control, spin and durability. However, is very low powered, harsher on the arm and loses tension quickly.</li>
+      </ul>
+      <code>Author's Note: I use a co-polyester string called Solinco Hyper-G</code>
+  </section>
+  <section id="String_Tension" class="main-section">
+      <header>String Tension</header>
+      <p>Racquet manufacturers will always recommend the tension range that you should use when stringing their racquets, typically around 50-60 pounds.</p>
+      <p>Typically speaking, lower tensions allow the string to move more, providing more power and spin. On the other hand, higher tensions allow the string to remain stiff, giving a more controlled feel.</p>
+      <code>Author's Note: I have my racquet strung at 55 pounds</code>
+  </section>
+  <section id="String_Pattern" class="main-section">
+      <header>String Pattern</header>
+      <p>The simple rule of thumb here is that the smaller number of strings in a tennis racquet normally equates to more power and spin whereas a higher number of strings in a racquet equates to more control and less spin</p>
+      <ul>
+        <li>16 main and 19 cross (16/19) is an average string pattern</li>
+        <li>16 main and 18 cross (16/18) is an open string pattern for spin and power</li>
+        <li>18 main and 20 cross (18/20) is a closed string pattern for control</li>
+      </ul>      
+      <code>Author's Note: I have a string pattern of 16x19</code>
+  </section>
+  <section id="String_Gauge" class="main-section">
+    <header>String Gauge</header>
+    <p>The simplest rule of thumb is that the thicker the gauge or diameter of the string, the more durability, and control, while the thinner the gauge, the more power and comfort. </p>
+    <p>Tennis string gauges typically range from 1.05 mm to 1.41 mm. The most commonly available are between 1.20-1.30 mm.</p>
+    <p>Along with the millimetre measurement widely used in Europe, tennis string thickness is communicated by a whole number. In the USA, the lower the number, the thicker the gauge. In Europe, the higher the number, the thicker the gauge.</p>
+    <p>To further complicate matters, some gauges will have an “L” besides many of the gauges. The “L” stands for “Light”. and means it's thinner. So a 15L is thinner than a 15 gauge, but not quite as thin as a 16. Likewise, a 16L is thinner than a 16 but not quite as thin as a 17 and so on.</p>
+    <table>
+      <tr>
+        <th>USA Gauges</th>
+        <th>Millimetres</th>
+        <th>European Gauges</th>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>1.65 – 1.80mm</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>1.50 – 1.65mm</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>1.41 – 1.49mm</td>
+        <td>9.5</td>
+      </tr>
+      <tr>
+        <td>15L</td>
+        <td>1.33 – 1.41mm</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>1.26 – 1.34mm</td>
+        <td>8.5</td>
+      </tr>
+      <tr>
+        <td>16L</td>
+        <td>1.22 – 1.30mm</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>1.16 – 1.24mm</td>
+        <td>7.5</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>1.06 – 1.16mm</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>0.90 – 1.06mm</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>0.80 – 0.90mm</td>
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>0.70 – 0.80mm</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>0.60 – 0.70mm</td>
+        <td>2.5</td>
+      </tr>
+    </table>
+    <code>Author's Note: I have a string gauge of 17/1.2mm</code>
+  </section>
+  <section id="When_to_restring" class="main-section">
+    <header>When to restring</header>
+    <p>Contrary to popular belief, breaking a string isn't the only time you should restring your racquet. For the casual recreational player, a good rule of thumb to follow is to restring as many times in a year as you play in a week. For example, if you play 5 times a week, then you should restring at least 5 times a year. But if you use polyester string, we would recommend stringing more often. </p>
+    <code>Author's Note: I play twice a week</code>
+  </section>
+  <section id="Balance" class="main-section">
+    <header>Balance</header>
+    <p>Measured in Millimetres (mm) or centimetres (cm)</p>
+    <p>This measure shows where most of the weight is in your racquet. Either its perfectly balanced with equal weight across the racquet head and the handle, or its head heavy with more weight in the racquet head or its head light with most of the weight in the handle.</p>
+    <p>More weight in the head of the racquet will mean more velocity in your swing when the ball connects so more power in your shots. And similarly a head light racquet will have less power but offer you more control.</p>
+    <p>The balance point of a racquet is measured from the butt or handle end. If the balance measurement is less than half the length of the racquet that means the balance point is towards the handle and therefore its a head light racquet. If the balance measurement is more than half the total length of the racquet then the balance point is towards the head which means its a head heavy racquet.</p>
+    <p>For racquets that are 27 inches or 69cm or 690mm:</p>
+    <ul>
+      <li>If the balance is less than 345mm (34.5cm) then the racquet is head light</li>
+      <li>If the balance is more than 345mm (34.5cm) then the racquet is head heavy</li>
+      <li>If the balance is 345mm (34.5cm) or very close then the racquet is perfectly balanced</li>
+    </ul>
+    <code>Author's Note: I have a balance of 320mm/ 7 pts head light</code>
+  </section>
+  <section id="Racquet_Overgrips" class="main-section">
+    <header>Racquet Overgrips</header>
+    <p>There are two main types of overgrip: tacky and absorbent. The tacky grip is for someone who doesn't sweat; it's not absorbent and becomes slippery (eg. Wilson Pro). Dry or absorbent grips are less durable but allow someone who sweats more to grip better (eg. Tourna Grip).</p>
+    <p>Ideally, you want your overgrip to adhere to your hand when playing and not feel like it is going to slip off. Tennis players should look at changing the overgrip at least once a month, however, this depends on the level of sweat, as well as how often one plays.</p>
+    <code>Author's Note: I personally use Toalson Over Grip Tape</code>
+  </section>
+  <section id="Racquet_Grip_Size" class="main-section">
+    <header>Racquet Grip Size</header>
+    <p>The bottom of your handle will list a number, typically 0 to 5. This number designates your grip size</p>
+    <table>
+      <tr>
+        <td>(0)</td>
+        <td>4"</td>
+      </tr>
+      <tr>
+        <td>(1)</td>
+        <td>4 1/8"</td>
+      </tr>
+      <tr>
+        <td>(2)</td>
+        <td>4 1/4"</td>
+      </tr>
+      <tr>
+        <td>(3)</td>
+        <td>4 3/8"</td>
+      </tr>
+      <tr>
+        <td>(4)</td>
+        <td>4 1/2"</td>
+      </tr>
+      <tr>
+        <td>(5)</td>
+        <td>5"</td>
+      </tr>
+    </table>
+    <code>Author's Note: My grip size is 3 (4 3/8")</code>
+  </section>
+  <section id="Dampeners" class="main-section">
+    <header>Dampeners</header>
+    <p>The sole purpose of the dampener is to reduce the vibrations off the racquet stringbed. Players that like vibration dampeners mainly use it because it decreases the “ping” sound the ball makes at impact. For many players this is more of a mental purpose than a physical purpose.</p>
+    <p>There are two main types of vibration dampeners that you will see on the market. “Button” dampeners look similar in size and shape to a button on your clothing except made with all rubber. These are the easiest ones to install and are more commonly used on the pro tour.</p>
+    <p>“Worm” dampeners will usually come in longer sizes and are typically woven in between the most frequently used main strings. These can be little more difficult to install.</p>
+    <code>Author's Note: I use a standard button babolat dampener</code>
+  </section>
+  <section id="References" class="main-section">
+    <header>References</header>
+    <p>https://www.complex.com/sneakers/2012/08/the-evolution-of-the-tennis-racquet</p>
+    <p>https://www.pledgesports.org/2019/08/evolution-of-tennis-racquets/</p>
+    <p>https://tennisreviewer.com/history-of-tennis-racquets/</p>
+    <p>https://tennisnerd.net/gear/racquets/which-racquet-brand-should-you-choose-and-why/25339</p>
+    <p>https://tennishead.net/tennis-racquet-specifications-explained/</p>
+    <p>https://www.wilson.com/en-us/blog/tennis/how-tos/four-steps-determine-your-tennis-racket-grip-size</p>
+    <p>https://www.tennis-warehouse.com/learning_center/gear_guides/tennis_string/material_gauge_tension_explained.html</p>
+    <p>https://www.perfect-tennis.com/tennis-string-gauge/</p>
+    <p>https://www.merchantoftennis.com/blogs/racquets/everything-you-need-to-know-about-overgrips-and-replacement-grips</p>
+  </section>
+</main>
+
